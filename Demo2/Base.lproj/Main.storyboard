@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u9u-vz-Ngt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-header.jpg" id="EMf-GN-g3w">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Frk-uF-aNc">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Frk-uF-aNc" id="vzg-5F-kPR">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sadfsdafjlsaljlkjljlk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNR-1Z-2Yf">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfq-6R-A4i">
+                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                                    <string key="text">KVO/KVC 是观察者模式在 Objective-C 中的实现，以非正式协议（Category）的形式被定义在 NSObject 中。从协议的角度看，是定义了一套让开发者遵守的规范和使用的方法。在 Cocoa 的 MVC 框架中，架起 ViewController 和 Model 沟通的桥梁。</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GNR-1Z-2Yf" firstAttribute="top" secondItem="vzg-5F-kPR" secondAttribute="topMargin" id="1zN-Xw-lTs"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GNR-1Z-2Yf" secondAttribute="bottom" constant="6.5" id="5bN-UJ-QE8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Lfq-6R-A4i" secondAttribute="bottom" constant="-7.5" id="6UB-89-nns"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lfq-6R-A4i" secondAttribute="trailing" id="IwP-bb-qMj"/>
+                                                <constraint firstItem="Lfq-6R-A4i" firstAttribute="leading" secondItem="vzg-5F-kPR" secondAttribute="leading" id="NFR-uJ-jSK"/>
+                                                <constraint firstItem="GNR-1Z-2Yf" firstAttribute="leading" secondItem="vzg-5F-kPR" secondAttribute="leadingMargin" id="PYJ-fn-Occ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GNR-1Z-2Yf" secondAttribute="trailing" constant="247" id="hT6-Gu-OZl"/>
+                                                <constraint firstItem="Lfq-6R-A4i" firstAttribute="top" secondItem="vzg-5F-kPR" secondAttribute="topMargin" constant="14" id="lj4-mN-THQ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="GNR-1Z-2Yf"/>
+                                                    <exclude reference="Lfq-6R-A4i"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="1zN-Xw-lTs"/>
+                                                    <exclude reference="5bN-UJ-QE8"/>
+                                                    <exclude reference="PYJ-fn-Occ"/>
+                                                    <exclude reference="hT6-Gu-OZl"/>
+                                                    <exclude reference="6UB-89-nns"/>
+                                                    <exclude reference="IwP-bb-qMj"/>
+                                                    <exclude reference="NFR-uJ-jSK"/>
+                                                    <exclude reference="lj4-mN-THQ"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="GNR-1Z-2Yf"/>
+                                                    <include reference="Lfq-6R-A4i"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="1zN-Xw-lTs"/>
+                                                    <include reference="5bN-UJ-QE8"/>
+                                                    <include reference="PYJ-fn-Occ"/>
+                                                    <include reference="hT6-Gu-OZl"/>
+                                                    <include reference="6UB-89-nns"/>
+                                                    <include reference="IwP-bb-qMj"/>
+                                                    <include reference="NFR-uJ-jSK"/>
+                                                    <include reference="lj4-mN-THQ"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="805"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="foa-kN-p4V"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3Wy-Yr-fHe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="u9u-vz-Ngt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="u9u-vz-Ngt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="u9u-vz-Ngt" id="48E-6L-uaR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274.5" y="320.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-header.jpg" width="1242" height="825"/>
+    </resources>
+</document>
